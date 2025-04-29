@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الشخصي لسعود</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #007acc;
+            margin-top: 0;
+        }
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul.social-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.social-links li {
+            display: inline;
+            margin-right: 10px;
+        }
+        ul.social-links li:last-child {
+            margin-right: 0;
+        }
+        button {
+            background-color: #007acc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا، أنا سعود</h1>
+        <section id="about">
+            <h2>نبذة عني</h2>
+            <p>أنا سعود، مبرمج ومطور ويب شغوف بالبرمجة وتطوير التطبيقات. أحب تعلم التقنيات الجديدة وبناء المشاريع المفيدة. أعمل على مشاريع ويب شخصية وأتعلم لغات برمجة مثل HTML وCSS وJavaScript.</p>
+        </section>
+        <section id="social">
+            <h2>التواصل الاجتماعي</h2>
+            <ul class="social-links">
+                <li><a href="#" target="_blank">تويتر</a></li>
+                <li><a href="#" target="_blank">لينكدإن</a></li>
+                <li><a href="#" target="_blank">جيت هاب</a></li>
+            </ul>
+        </section>
+        <section id="support">
+            <h2>الدعم الفني</h2>
+            <p>إذا كنت بحاجة إلى مساعدة أو ترغب في التعاون، يمكنك التواصل عبر سيرفر ديسكورد التالي:</p>
+            <p><a href="https://discord.gg/DvhasPdjxk" target="_blank">انضم إلى سيرفر ديسكورد الخاص بي</a></p>
+        </section>
+        <section id="audio">
+            <h2>مقطع صوتي</h2>
+            <!--https://l.top4top.io/m_3405ro4uy1.mp3-->
+            <audio id="myAudio" src="path/to/your-audio-file.mp3"></audio>
+            <button onclick="playAudio()">تشغيل الصوت</button>
+            <button onclick="stopAudio()">إيقاف الصوت</button>
+        </section>
+    </div>
+
+    <script>
+        // الحصول على عنصر الصوت
+        var audio = document.getElementById("myAudio");
+        // دالة تشغيل الصوت
+        function playAudio() {
+            audio.play();
+        }
+        // دالة إيقاف الصوت وإعادة ضبط الوقت إلى البداية
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
